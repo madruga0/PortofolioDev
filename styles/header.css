@@ -1,0 +1,21 @@
+/* Header CSS - Normal CSS  + native nesting */
+header {
+    display: flex;
+    margin-block: 30px;
+    justify-content: space-between;
+
+    & nav {
+        display: flex;
+        gap: 24px;
+
+        & a {
+            text-decoration: none;
+            color: var(--neutral);
+
+            &:hover {
+                font-weight: 600;
+                color: var(--primary-blue);
+            }
+        }
+    }
+}

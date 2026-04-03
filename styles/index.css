@@ -8,10 +8,15 @@
     /* Color variables  */
     --primary-blue: #3B82F6;
     --secondary-light-blue: #6177A5;
-    --tertiary-pink : #D16900;
+    --tertiary-orange: #D16900;
     --neutral: #1F2937;
     
     /* Font-family variables */
     --font-body-inter: "Inter", sans-serif;
     --font-headline-manrope: "Manrope", sans-serif;
+}
+
+.page {
+    font-family: var(--font-body-inter);
+    margin-inline: 15px;
 }
