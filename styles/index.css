@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Color variables  */
+    --primary-blue: #3B82F6;
+    --secondary-light-blue: #6177A5;
+    --tertiary-pink : #D16900;
+    --neutral: #1F2937;
+    
+    /* Font-family variables */
+    --font-body-inter: "Inter", sans-serif;
+    --font-headline-manrope: "Manrope", sans-serif;
+}
