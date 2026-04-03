@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Pedro Madruga</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="page">
+        <!-- Header with nav links to other sections -->
+        <header>
+            <h3>Cl 3:23-24</h3>
+            <nav>
+                <a href="#">Sobre mim</a>
+                <a href="#">Formacao</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contato</a>
+            </nav>
+        </header>
+
+        <!-- Section - Personal Informations -->
+        <section class="me">
+            <h1>Pedro Madruga</h1>
+            <h2>Engenheiro de Software - Front-end</h2>
+            <p>Contribuindo para o desenvolvimento de soluções front-end escaláveis e de alto impacto,<span> com foco em
+                    qualidade, colaboração e boas práticas de desenvolvimento.</span>
+            </p>
+
+            <button>Ver portfolio</button>
+        </section>
+
+        <!-- Section - About me -> Stack and interests -->
+        <section class="about-me">
+            <h3>Sobre mim</h3>
+            <aside>
+                <p>Sou apaixonado por resolver problemas complexos, aprender continuamente e transformar desafios
+                    técnicos em soluções reais e eficientes, sempre buscando evoluir como desenvolvedor e contribuir com
+                    times colaborativos e inovadores.</p>
+                <ul class="stack">
+                    <h3>stack tecnologica</h3>
+                    <li>Liferay DXP</li>
+                    <li>Javascript | Typescript</li>
+                    <li>Playwright (E2E Testing)</li>
+                    <li>HTML | CSS | Bootstrap</li>
+                    <li>JSP | Freemarker | Java</li>
+                    <li>Docker | Docker Compose</li>
+                    <li>Linux (Fedora)</li>
+                    <li>Jira | Confluence</li>
+                </ul>
+                <ul class="interests">
+                    <h3>curiosidades</h3>
+                    <li>Cristao</li>
+                    <li>Trilha sonora de filmes</li>
+                    <li>Teologia</li>
+                    <li>Lideranca</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- Section - My academical path -->
+        <section class="academic">
+            <h3>Formacao</h3>
+            <ul>
+                <li>
+                    <div class="academic-card">
+                        <p class="academic-date">2025-2029</p>
+                        <h3 class="academic-title">UNINTER Centro Universitario Internacional</h3>
+                        <p class="academic-description">
+                            Bacharel em Ciencia da Computacao.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="academic-card">
+                        <p class="academic-date">2025</p>
+                        <h3 class="academic-title">EF SET English Certificate</h3>
+                        <p class="academic-description">
+                            B2 Upper Intermediate
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="academic-card">
+                        <p class="academic-date">07/2024-07/2025</p>
+                        <h3 class="academic-title">Projeto Soli Deo Gloria</h3>
+                        <p class="academic-description">
+                            Participei ativamente da construção do site institucional do projeto Soli Deo Gloria,
+                            utilizando uma stack robusta que incluiu JavaScript, HTML, CSS, Java, Liferay DXP e Docker.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="academic-card">
+                        <p class="academic-date">2021-2023</p>
+                        <h3 class="academic-title">Escola de Sargento das Armas | Fuzileiro Naval</h3>
+                        <p class="academic-description">
+                            Estudando ativamente para os concursos militares da ESA e de FN, sendo aprovado e
+                            classificado no FN e aprovado na ESA.
+                            Desenvolvi resiliencia, disciplina e motivacao para manter os foco no objetivo.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section - Portfolio with some projects -->
+        <section class="portfolio">
+            <h3>Selecao de projetos</h3>
+
+            <figure class="portfolio-card">
+                <h4>Buscador de CEP</h4>
+                <img src="#" alt="">
+                <figcaption>Buscador de CEP para calcular o valor do frete para determinadas regioes do Brasil.
+                </figcaption>
+            </figure>
+
+            <figure class="portfolio-card">
+                <h4>Currency converter</h4>
+                <img src="#" alt="">
+                <figcaption>Projeto desenvolvido em HTML, CSS e Javascript para fazer a conversao do Real para EURO,
+                    DOLAR ou LIBRA ESTERLINA</figcaption>
+            </figure>
+        </section>
+
+        <!-- Section - Contact me -->
+        <section class="contact-me">
+            <aside>
+                <h3>Contato</h3>
+                <p>Deixe sua sugestao ou entre em contato, muito provavel que eu tenha a solucao que voce busca.</p>
+            </aside>
+            <form action="post">
+                <fieldset class="contact-me-form">
+                    <legend>Nome</legend>
+                    <input type="text" placeholder="Seu nome completo">
+
+                    <legend>E-mail</legend>
+                    <input type="email" placeholder="seu@email.com">
+
+                    <legend>Mensagem</legend>
+                    <textarea name="message" id="" placeholder="Como posso ajudar?"></textarea>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Pedro Madruga, 2026</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
