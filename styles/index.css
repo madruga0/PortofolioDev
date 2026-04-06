@@ -21,3 +21,10 @@
     font-family: var(--font-body-inter);
     margin-inline: 15px;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: flex-start;
+    margin-block: 175px;
+}
