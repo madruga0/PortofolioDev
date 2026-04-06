@@ -6,6 +6,7 @@
 
 :root {
     /* Color variables  */
+    --white: #fff;
     --primary-blue: #3B82F6;
     --secondary-light-blue: #6177A5;
     --tertiary-orange: #D16900;
