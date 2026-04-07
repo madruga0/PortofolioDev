@@ -1,6 +1,8 @@
 /* Section About Me CSS - Normal CSS  + native nesting */
 section.about-me {
     margin-inline: 10px;
+    padding-block: 45px;
+    background: rgb(242, 246, 255);
     
     h3 {
         font-size: 32px;
