@@ -2,4 +2,40 @@ section.about-me {
     h3 {
         font-size: 32px;
     }
+
+    aside {
+
+        p {
+            margin-block-end: 60px;
+            font-size: 1rem;
+            color: var(--neutral);
+        }
+
+        .list-wrapper {
+            display: flex;
+            justify-content: space-between;
+
+            ul {
+                h2 {
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    color: var(--primary-blue);
+                    margin-block-end: 15px;
+                }
+
+                li {
+                    margin-inline-start: 18px;
+                    margin-block-end: 5px;
+                    color: var(--neutral);
+                    font-size: 14px;
+
+                    &::marker {
+                        color: var(--primary-blue);
+                    }
+
+                }
+            }
+        }
+    }
 }
