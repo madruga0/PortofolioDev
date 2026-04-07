@@ -1,8 +1,10 @@
 section.about-me {
+    margin-inline: 10px;
+    
     h3 {
         font-size: 32px;
     }
-
+    
     aside {
 
         p {

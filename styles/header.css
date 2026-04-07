@@ -2,6 +2,7 @@
 header {
     display: flex;
     margin-block: 30px;
+    margin-inline: 10px;
     justify-content: space-between;
 
     & nav {
