@@ -1,0 +1,39 @@
+section.academic {
+    
+    padding-inline: 10px;
+    padding-block: 10px;
+    background: rgb(242, 246, 255);
+
+    h3 {
+        font-size: 32px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        list-style: none;
+
+        .academic-card {
+            p.academic-date {
+                color: var(--primary-blue);
+                margin-block-end: 12px;
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            h4 {
+                font-size: 20px;
+                margin-block-end: 5px;
+            }
+
+            p.academic-description {
+                font-size: 14px;
+                color: var(--neutral);
+            }
+
+        }
+
+    }
+
+}
