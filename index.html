@@ -139,21 +139,38 @@
         </section>
 
         <!-- Section - Contact me -->
-        <section class="contact-me">
+        <section class="contact-me grid">
             <aside>
                 <h3>Contato</h3>
                 <p>Deixe sua sugestao ou entre em contato, muito provavel que eu tenha a solucao que voce busca.</p>
+                <ul>
+                    <li><img src="./assets/icons/linkedin.svg" alt="Linkedin logo"><a
+                            href="https://www.linkedin.com/in/pedro-madruga-a4901716a/" target="_blank">Linkedin</a>
+                    </li>
+
+                    <li><img src="./assets/icons/github.svg" alt="Github logo"><a           
+                            href="https://github.com/madruga0"
+                            target="_blank">Github</a></li>
+                </ul>
             </aside>
             <form action="post">
                 <fieldset class="contact-me-form">
-                    <legend>Nome</legend>
-                    <input type="text" placeholder="Seu nome completo">
+                    <div class="input-wrapper">
+                        <label for="name">Nome</label>
+                        <input id="name" type="text" placeholder="Seu nome completo" required>
+                    </div>
 
-                    <legend>E-mail</legend>
-                    <input type="email" placeholder="seu@email.com">
+                    <div class="input-wrapper">
+                        <label for="email">E-mail</label>
+                        <input pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="email" type="email"
+                            placeholder="seu@email.com" required>
+                    </div>
 
-                    <legend>Mensagem</legend>
-                    <textarea name="message" id="" placeholder="Como posso ajudar?"></textarea>
+                    <div class="input-wrapper">
+                        <label for="help">Mensagem</label>
+                        <textarea id="help" name="message" id="" placeholder="Como posso ajudar?" rows="10"></textarea>
+                    </div>
+                    <button>Enviar mensagem</button>
                 </fieldset>
             </form>
         </section>

@@ -1,0 +1,113 @@
+.contact-me {
+    padding: 10px;
+
+    aside {
+        h3 {
+            font-size: 32px;
+            margin-block-end: 15px;
+        }
+
+        p {
+            color: var(--neutral);
+            font-size: 14px;
+        }
+
+        ul {
+            margin-block-start: 25px;
+            list-style: none;
+
+            li {
+                margin-block-end: 15px;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: var(--secondary-light-blue);
+                    font-size: 18px;
+                    &:hover {
+                        font-weight: 600;
+                        color: var(--primary-blue);
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    form {
+        background: rgb(242, 246, 255);
+        border-radius: 25px;
+
+        fieldset {
+            border: none;
+            padding: 25px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+
+            .input-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                input,
+                textarea {
+                    border: none;
+                    border-radius: 10px;
+                    padding: 18px 8px;
+                    color: var(--neutral);
+                    background-color: rgb(222, 231, 252);
+                }
+
+                textarea {
+                    color: var(--neutral);
+                    font-family: var(--font-body-inter);
+
+                    &::placeholder {
+                        color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+                        ;
+                        font-family: var(--font-body-inter);
+                    }
+                }
+
+                ;
+
+                label {
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+            }
+
+            button {
+                padding: 12px 50px;
+                border-radius: 8px;
+                font-size: 1rem;
+                color: var(--white);
+                border: none;
+                background: linear-gradient(45deg, #2755a0, #4d91ff);
+                transition: all 0.2s ease;
+                letter-spacing: 1px;
+                font-weight: 600;
+
+                &:hover {
+                    transform: scale(1.01);
+                    cursor: pointer;
+                }
+
+            }
+
+        }
+    }
+
+
+}
