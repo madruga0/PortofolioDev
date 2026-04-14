@@ -1,53 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Pedro Madruga</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./styles/global.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
 
     <div class="page">
-        <!-- Header with nav links to other sections -->
+        <!-- Header -->
         <header>
-            <h3>Cl 3:23-24</h3>
-            <nav>
-                <a href="#">Sobre mim</a>
-                <a href="#">Formacao</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Contato</a>
+            <h3 class="logo">Cl 3:23-24</h3>
+            <nav id="main-nav">
+                <a href="#about-me">Sobre</a>
+                <a href="#academic">Formação</a>
+                <a href="#portfolio">Projetos</a>
+                <a href="#contact">Contato</a>
+                <button id="theme-toggle" aria-label="Alternar tema">
+                    <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg id="moon-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
             </nav>
         </header>
 
-        <!-- Section - Personal Informations -->
-        <section class="me">
-            <h1>Pedro Madruga</h1>
-            <h2>Engenheiro Front-end</h2>
-            <p>Contribuindo para o desenvolvimento de soluções front-end escaláveis e de alto impacto,<span> com foco em
-                    qualidade, colaboração e boas práticas de desenvolvimento.</span>
-            </p>
-
-            <button onclick="goToGithub()">Github Portfolio</button>
-
+        <!-- Hero Section -->
+        <section class="me reveal" id="hero">
+            <div class="hero-content">
+                <h1>Pedro Madruga</h1>
+                <h2>Engenheiro Front-end</h2>
+                <p>Contribuindo para o desenvolvimento de soluções front-end escaláveis e de alto impacto,<span> com foco em qualidade, colaboração e boas práticas.</span></p>
+                <button onclick="goToGithub()" class="btn-primary">Github Portfolio</button>
+            </div>
         </section>
 
-        <!-- Section - About me -> Stack and interests -->
-        <section class="about-me grid">
-            <h3>Sobre mim</h3>
+        <!-- About Me Section -->
+        <section class="about-me grid reveal" id="about-me">
+            <div class="section-title">
+                <h3>Sobre mim</h3>
+            </div>
             <aside>
-                <p>Resolver problemas complexos, aprender continuamente e transformar desafios técnicos em soluções
-                    reais e eficientes.</p>
+                <p class="description">Resolver problemas complexos, aprender continuamente e transformar desafios técnicos em soluções reais e eficientes.</p>
                 <div class="list-wrapper">
                     <ul class="stack">
-                        <h2>stack tecnologica</h2>
+                        <h2>Stack Tecnológica</h2>
                         <li>Liferay DXP</li>
                         <li>Javascript | Typescript</li>
                         <li>Playwright (E2E Testing)</li>
@@ -58,102 +61,102 @@
                         <li>Jira | Confluence</li>
                     </ul>
                     <ul class="interests">
-                        <h2>curiosidades</h2>
-                        <li>Cristao</li>
+                        <h2>Curiosidades</h2>
+                        <li>Cristão</li>
                         <li>Trilha sonora de filmes</li>
                         <li>Teologia</li>
-                        <li>Lideranca</li>
+                        <li>Liderança</li>
                     </ul>
                 </div>
             </aside>
         </section>
 
-        <!-- Section - My academical path -->
-        <section class="academic grid">
-            <h3>Formacao</h3>
-            <ul>
+        <!-- Academic Section -->
+        <section class="academic grid reveal" id="academic">
+            <div class="section-title">
+                <h3>Formação</h3>
+            </div>
+            <ul class="academic-list">
                 <li>
                     <div class="academic-card">
-                        <p class="academic-date">2025-2029</p>
-                        <h4 class="academic-title">UNINTER Centro Universitario Internacional</h4>
-                        <p class="academic-description">
-                            Bacharel em Ciencia da Computacao.
-                        </p>
+                        <span class="academic-date">2025 - 2029</span>
+                        <h4>UNINTER Centro Universitário</h4>
+                        <p>Bacharel em Ciência da Computação.</p>
                     </div>
                 </li>
                 <li>
                     <div class="academic-card">
-                        <p class="academic-date">2025</p>
-                        <h4 class="academic-title">EF SET English Certificate</h4>
-                        <p class="academic-description">
-                            B2 Upper Intermediate
-                        </p>
+                        <span class="academic-date">2025</span>
+                        <h4>EF SET English Certificate</h4>
+                        <p>B2 Upper Intermediate</p>
                     </div>
                 </li>
                 <li>
                     <div class="academic-card">
-                        <p class="academic-date">07/2024-07/2025</p>
-                        <h4 class="academic-title">Projeto Soli Deo Gloria</h4>
-                        <p class="academic-description">
-                            Participei ativamente da construção do site institucional do projeto Soli Deo Gloria,
-                            utilizando uma stack robusta que incluiu JavaScript, HTML, CSS, Java, Liferay DXP e Docker.
-                        </p>
+                        <span class="academic-date">07/2024 - 07/2025</span>
+                        <h4>Projeto Soli Deo Gloria</h4>
+                        <p>Desenvolvimento do site institucional utilizando JavaScript, HTML, CSS, Java, Liferay DXP e Docker.</p>
                     </div>
                 </li>
                 <li>
                     <div class="academic-card">
-                        <p class="academic-date">2021-2023</p>
-                        <h4 class="academic-title">Escola de Sargento das Armas | Fuzileiro Naval</h4>
-                        <p class="academic-description">
-                            Estudando ativamente para os concursos militares da ESA e de FN, sendo aprovado e
-                            classificado no FN e aprovado na ESA.
-                            Desenvolvi resiliencia, disciplina e motivacao para manter os foco no objetivo.
-                        </p>
+                        <span class="academic-date">2021 - 2023</span>
+                        <h4>Carreira Militar (ESA | FN)</h4>
+                        <p>Aprovado e classificado no FN e ESA. Desenvolvimento de resiliência e disciplina.</p>
                     </div>
                 </li>
             </ul>
         </section>
 
-        <!-- Section - Portfolio with some projects -->
-        <section class="portfolio">
-            <h3>Selecao de projetos</h3>
-
+        <!-- Portfolio Section -->
+        <section class="portfolio reveal" id="portfolio">
+            <h3>Seleção de projetos</h3>
             <div class="figure-wrapper">
                 <figure class="portfolio-card">
-                    <img src="./assets/frete.png" alt="Buscador de Frete image">
-                    <h4>Buscador de CEP</h4>
-                    <figcaption>Buscador de CEP para calcular o valor do frete para determinadas regioes do Brasil.
-                    </figcaption>
-                    <a href="https://madruga0.github.io/buscaCep/" target="_blank">Ver projeto</a>
+                    <div class="card-image">
+                        <img src="./assets/frete.png" alt="Buscador de Frete">
+                    </div>
+                    <div class="card-content">
+                        <h4>Buscador de CEP</h4>
+                        <figcaption>Cálculo de frete para diversas regiões do Brasil integrando APIs de localização.</figcaption>
+                        <a href="https://madruga0.github.io/buscaCep/" target="_blank" class="project-link">Ver projeto <span>&rarr;</span></a>
+                    </div>
                 </figure>
 
                 <figure class="portfolio-card">
-                    <img src="./assets/currency.png" alt="Currency image">
-                    <h4>Currency converter</h4>
-                    <figcaption>Projeto desenvolvido em HTML, CSS e Javascript para fazer a conversao do Real para EURO,
-                        DOLAR ou LIBRA ESTERLINA</figcaption>
-                    <a href="https://currency-converter-psi-fawn.vercel.app/" target="_blank">Ver projeto </a>
-
+                    <div class="card-image">
+                        <img src="./assets/currency.png" alt="Conversor de Moeda">
+                    </div>
+                    <div class="card-content">
+                        <h4>Currency Converter</h4>
+                        <figcaption>Conversão em tempo real entre Real, Euro, Dólar e Libra Esterlina.</figcaption>
+                        <a href="https://currency-converter-psi-fawn.vercel.app/" target="_blank" class="project-link">Ver projeto <span>&rarr;</span></a>
+                    </div>
                 </figure>
             </div>
         </section>
 
-        <!-- Section - Contact me -->
-        <section class="contact-me grid">
+        <!-- Contact Section -->
+        <section class="contact-me grid reveal" id="contact">
             <aside>
                 <h3>Contato</h3>
-                <p>Deixe sua sugestao ou entre em contato, muito provavel que eu tenha a solucao que voce busca.</p>
-                <ul>
-                    <li><img src="./assets/icons/linkedin.svg" alt="Linkedin logo"><a
-                            href="https://www.linkedin.com/in/pedro-madruga-a4901716a/" target="_blank">Linkedin</a>
+                <p>Deixe sua sugestão ou entre em contato. Vamos construir algo incrível juntos.</p>
+                <ul class="social-links">
+                    <li>
+                        <a onclick="goToLinkedin()" class="social-item">
+                            <img src="./assets/icons/linkedin.svg" alt="Linkedin">
+                            <span>Linkedin</span>
+                        </a>
                     </li>
-
-                    <li><img src="./assets/icons/github.svg" alt="Github logo"><a           
-                            href="https://github.com/madruga0"
-                            target="_blank">Github</a></li>
+                    <li>
+                        <a onclick="goToGithub()" class="social-item">
+                            <img src="./assets/icons/github.svg" alt="Github">
+                            <span>Github</span>
+                        </a>
+                    </li>
                 </ul>
             </aside>
-            <form action="post">
+            <form id="contact-form">
                 <fieldset class="contact-me-form">
                     <div class="input-wrapper">
                         <label for="name">Nome</label>
@@ -162,27 +165,25 @@
 
                     <div class="input-wrapper">
                         <label for="email">E-mail</label>
-                        <input pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="email" type="email"
-                            placeholder="seu@email.com" required>
+                        <input id="email" type="email" placeholder="seu@email.com" required>
                     </div>
 
                     <div class="input-wrapper">
-                        <label for="help">Mensagem</label>
-                        <textarea id="help" name="message" id="" placeholder="Como posso ajudar?" rows="10"></textarea>
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" placeholder="Como posso ajudar?" rows="5" required></textarea>
                     </div>
-                    <button>Enviar mensagem</button>
+                    <button type="submit" class="btn-submit">Enviar mensagem</button>
                 </fieldset>
             </form>
         </section>
 
         <!-- Footer -->
         <footer>
-            <p>Pedro Madruga, 2026</p>
+            <p>&copy; Pedro Madruga, <span id="year"></span></p>
         </footer>
 
     </div>
 
-    <!-- Import scripts -->
     <script src="scripts.js"></script>
 </body>
 

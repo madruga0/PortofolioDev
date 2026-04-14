@@ -1,22 +1,70 @@
-/* Header CSS - Normal CSS  + native nesting */
 header {
     display: flex;
-    margin-block: 30px;
-    margin-inline: 10px;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 40px;
 
-    & nav {
+    .logo {
+        font-family: var(--font-heading);
+        font-weight: 800;
+        font-size: 1.5rem;
+        color: var(--primary-blue);
+    }
+
+    nav {
         display: flex;
+        align-items: center;
         gap: 24px;
 
-        & a {
+        a {
             text-decoration: none;
-            color: var(--neutral);
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color var(--transition-speed), transform var(--transition-speed);
 
             &:hover {
-                font-weight: 600;
                 color: var(--primary-blue);
+                transform: translateY(-2px);
             }
+        }
+
+        #theme-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--text-primary);
+            padding: 8px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color var(--transition-speed), transform 0.2s;
+
+            &:hover {
+                background-color: var(--surface-color-hover);
+                transform: rotate(15deg);
+            }
+
+            svg.hidden {
+                display: none;
+            }
+        }
+    }
+}
+
+/* Header Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+
+        nav {
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
     }
 }

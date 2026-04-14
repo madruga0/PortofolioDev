@@ -1,46 +1,71 @@
-/* Section About Me CSS - Normal CSS  + native nesting */
 section.about-me {
-    margin-inline: 10px;
-    padding-block: 45px;
-    background: rgb(242, 246, 255);
-    
-    h3 {
-        font-size: 32px;
-    }
-    
-    aside {
+    padding: 60px 32px;
+    background-color: var(--surface-color);
+    border-radius: 24px;
+    margin-bottom: var(--section-margin);
+    transition: background-color var(--transition-speed);
 
-        p {
-            margin-block-end: 60px;
-            font-size: 1rem;
-            color: var(--neutral);
+    h3 {
+        font-family: var(--font-heading);
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 24px;
+    }
+
+    aside {
+        .description {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 48px;
+            max-width: 800px;
         }
 
         .list-wrapper {
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
 
             ul {
+                list-style: none;
+
                 h2 {
                     text-transform: uppercase;
-                    font-size: 14px;
-                    letter-spacing: 1px;
+                    font-size: 0.8rem;
+                    letter-spacing: 2px;
                     color: var(--primary-blue);
-                    margin-block-end: 15px;
+                    margin-bottom: 20px;
+                    font-weight: 700;
                 }
 
                 li {
-                    margin-inline-start: 18px;
-                    margin-block-end: 5px;
-                    color: var(--neutral);
-                    font-size: 14px;
+                    margin-bottom: 12px;
+                    color: var(--text-secondary);
+                    font-size: 0.95rem;
+                    display: flex;
+                    align-items: center;
 
-                    &::marker {
+                    &::before {
+                        content: "•";
                         color: var(--primary-blue);
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 1.2em;
                     }
-
                 }
             }
+        }
+    }
+}
+
+/* About Me Responsive */
+@media (max-width: 640px) {
+    section.about-me {
+        padding: 40px 20px;
+
+        .list-wrapper {
+            grid-template-columns: 1fr;
+            gap: 32px;
         }
     }
 }
